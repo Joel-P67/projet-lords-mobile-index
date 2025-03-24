@@ -1,0 +1,388 @@
+/*style.css*/
+
+/* Corps de la page avec l'image de fond */
+body {
+    min-height: 100vh; /* Min hauteur égale à la hauteur de l'écran */ 
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    background-color: #7dc0f7;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Hauteur de la fenêtre */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Cela garantit que l'image couvre toute la zone */
+    background-position: center; /* Centre l'image */
+}
+
+.fond {
+    background-image: url('../img/fond-de-site-00.webp');
+    z-index: 1;
+}
+
+.colonnes-g {
+    background-image: url('../img/colonnesg.webp');
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-size: cover; /* L'image couvre tout l'espace disponible */
+    background-position: left center; /* Positionne l'image à gauche */
+    z-index: 2;
+}
+
+.colonnes-d {
+    background-image: url('../img/colonnesd.webp');
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-size: cover; /* L'image couvre tout l'espace disponible */
+    background-position: right center; /* Positionne l'image à droite */
+    z-index: 3;
+}
+
+.overlay {
+    background: rgba(15,69,104, 0.7); /* Transparence */
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 5; /* Important pour être au-dessus des images de fond */
+}
+
+.overlay-content {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 80vh; /* Empêche l'overlay d'être trop grand */
+    overflow-y: auto; /* Active le scroll pour tout excès de contenu */
+    display: flex;
+    flex-direction: column;
+}
+
+.element {
+    overflow-y: auto; /* Active le scroll interne */
+    max-height: 85vh; /* Définit une hauteur maximale pour le texte */
+    padding-right: 10px; /* Ajoute un peu d'espace pour éviter que le scroll cache le texte */
+}
+
+/* Styles pour la barre de défilement dans l'élément */
+.element::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+}
+
+.element::-webkit-scrollbar-track {
+    background: rgba(15,69,104, 0.3); /* Fond de la piste de défilement */
+}
+
+.element::-webkit-scrollbar-thumb {
+    background-color: rgba(28,133,176, 0.7); /* Couleur de la barre */
+    border-radius: 10px; /* Bords arrondis pour la barre */
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    .overlay {
+        top: 0;
+        left: 3%;  /* Réduction des marges latérales */
+        right: 3%; /* Réduction des marges latérales */
+        bottom: 0;
+        height: 100vh; /* S'assurer qu'il ne dépasse pas la hauteur de la fenêtre */
+    }
+
+    .fond, .colonnes-g, .colonnes-d {
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .colonnes-g, .colonnes-d {
+        position: static; /* Modifier pour un comportement plus fluide sur les petits écrans */
+        width: 100%;
+        height: auto;
+    }
+}
+
+.content-wrapper {
+    margin-top: 50px; /* Ajuste cette valeur pour le mobile */
+}
+
+/* Navbar */
+nav {
+    background-color: #0f4568;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prendre toute la largeur */
+    z-index: 10; /* Pour que la navbar soit au-dessus de l'overlay */
+}
+
+/* Liste de la navbar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Prendre toute la largeur */
+}
+
+/* Style des éléments de menu */
+.nav-item {
+    position: relative;
+}
+
+/* Style des liens (avec logo ou texte) */
+.nav-item > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+    background-color: #0f4568;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
+    border-radius: 0px; /* Pas de bordure arrondie par défaut */
+}
+
+/* Changement de couleur au survol */
+.nav-item > a:hover {
+    background-color: #1c85b0;
+    border-radius: 25px; /* Applique une forme arrondie au survol */
+}
+
+/* Style de l'image du logo pour l'onglet "Accueil" */
+.nav-item a .logo {
+    width: 24px; /* Largeur du logo (ajuste à ta préférence) */
+    height: auto; /* Garde les proportions */
+    margin-right: 10px; /* Espace entre le logo et le texte */
+    vertical-align: middle; /* Aligne l'image avec le texte */
+}
+
+/* Affichage des sous-menus (si tu en as) */
+.submenu {
+    background-color: #15608b;
+    color: white;
+    list-style-type: none;
+    position: absolute;
+    padding-left: 0;  /* Si un padding gauche est appliqué */
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 30;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav-item:hover .submenu,
+.nav-item.active .submenu {
+    max-height: 500px; /* Une valeur suffisante pour afficher tout le contenu */
+    overflow-y: auto;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+/* Style des éléments de sous-menu */
+.submenu li a {
+    background-color: #15608b;
+    transition: background-color 0.3s ease;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #76b4c3;
+}
+
+
+/* Affichage du sous-menu au survol (grand format) */
+.nav-item:hover .submenu {
+    display: block;
+}
+
+/* Menu hamburger (si nécessaire) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0f4568;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    /* Gestion du sous-menu sur mobile */
+    .submenu {
+        position: static;
+        width: 100%;
+        display: none;
+        max-height: 50vh; /* Limite la hauteur pour les petits écrans */
+        overflow-y: auto; /* Permet le scroll si nécessaire */
+    }
+
+    .nav-item.active .submenu {
+        display: block;
+    }
+}
+
+/* Empêcher le sous-menu de dépasser la hauteur de la fenêtre sur les grands écrans */
+.nav-item:nth-child(2) .submenu {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Styles pour les barres de défilement uniformes */
+.submenu::-webkit-scrollbar,
+.element::-webkit-scrollbar {
+    width: 8px; /* Ajuste la largeur pour être plus discrète */
+}
+
+.submenu::-webkit-scrollbar-track,
+.element::-webkit-scrollbar-track {
+    background: rgba(15,69,104, 0.5);
+}
+
+.submenu::-webkit-scrollbar-thumb,
+.element::-webkit-scrollbar-thumb {
+    background-color: #1c85b0;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .submenu::-webkit-scrollbar {
+        width: 12px; /* Augmente la largeur de la barre de défilement pour la rendre plus visible */
+    }
+
+    .submenu::-webkit-scrollbar-track {
+        background: rgba(15,69,104, 0.3); /* Garde le fond de la piste de défilement */
+    }
+
+    .submenu::-webkit-scrollbar-thumb {
+        background-color: rgba(28,133,176, 0.7); /* Change la couleur de la barre de défilement pour la rendre plus visible */
+        border-radius: 10px;
+    }
+
+}
+
+
+/* Styles pour le footer */
+footer {
+    background-color: #0f4568;
+    color: white;
+    padding: 2px 0; /* Réduit encore la hauteur du footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Pour qu'il reste au-dessus du contenu */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    font-size: 12px; /* Réduit la taille de la police */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux liens de se répartir sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centrer les liens */
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px; /* Ajoute un espace entre les liens */
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px; /* Réduit la taille du texte */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
+    border-radius: 0px; /* Pas de bordure arrondie par défaut */
+}
+
+.footer-links li a:hover {
+    background-color: #1c85b0;
+    border-radius: 25px;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 600px) {
+    footer {
+        padding: 5px 0; /* Réduit l'espace vertical sur les petits écrans */
+    }
+
+    .footer-content {
+        font-size: 10px; /* Réduit la taille de la police sur petits écrans */
+    }
+
+    .footer-links li {
+        margin: 5px 10px; /* Réduit l'espace entre les liens */
+    }
+}
+
+
+

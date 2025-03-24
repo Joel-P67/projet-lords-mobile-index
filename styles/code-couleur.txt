@@ -1,0 +1,53 @@
+Couleur des titres (h1) :
+
+Code hexadécimal : #d4c380
+RGB : rgba(212,195,128,255)
+
+Couleur des sous-titres (h2) :
+
+Code hexadécimal : #4cf4f4
+RGB : rgba(76,244,244,255)
+
+Effet sur tout le texte : text-shadow léger, couleur de l'ombre : 
+
+rgba(0, 0, 0, 0.5).
+
+Couleur de fond du body :
+
+Code hexadécimal : #7dc0f7
+RGB : rgb(125, 192, 247)
+
+Couleur de fond de l'overlay :
+
+Code hexadécimal : rgba(15, 69, 104, 0.7)
+RGB : rgb(15, 69, 104) avec une transparence de 0.7
+
+Couleur du fond de la navbar et du footer :
+
+Code hexadécimal : #0f4568
+RGB : rgb(15, 69, 104)
+
+Couleur au survol de la navbar (hover) :
+
+Code hexadécimal : #1c85b0
+RGB : rgb(28, 133, 176)
+
+Couleur de fond du sous-menu :
+
+Code hexadécimal : #15608b
+RGB : rgb(21, 96, 139)
+
+Couleur au survol du sous-menu (hover) :
+
+Code hexadécimal : #76b4c3
+RGB : rgb(118, 180, 195)
+
+Couleur de fond de la barre de défilement (track) :
+
+Code hexadécimal : rgba(15, 69, 104, 0.5)
+RGB : rgb(15, 69, 104) avec une transparence de 0.5
+
+Couleur de la barre de défilement (thumb) :
+
+Code hexadécimal : #1c85b0
+RGB : rgb(28, 133, 176)
