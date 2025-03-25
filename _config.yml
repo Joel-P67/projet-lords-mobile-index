@@ -1,7 +1,7 @@
 title: projet-lords-mobile-index
 email: jo.petrazoller@gmail.com
 description: "Un site qui contient des informations sur le jeu Lords Mobile"
-baseurl: "" # Laisse vide si ton site est à la racine de GitHub Pages
+baseurl: "/projet-lords-mobile-index"
 url: "https://joel-p67.github.io/projet-lords-mobile-index"
 twitter_username: jo_petrazoller
 github_username: joel-p67
