@@ -28,12 +28,12 @@ body {
 }
 
 .fond {
-    background-image: url('{{ site.baseurl }}/img/fond-de-site-00.webp');
+    background-image: url('../img/fond-de-site-00.webp');
     z-index: 1;
 }
 
 .colonnes-g {
-    background-image: url('{{ site.baseurl }}/img/colonnesg.webp');
+    background-image: url('../img/colonnesg.webp');
     left: 0;
     top: 0;
     height: 100%;
@@ -43,7 +43,7 @@ body {
 }
 
 .colonnes-d {
-    background-image: url('{{ site.baseurl }}/img/colonnesd.webp');
+    background-image: url('../img/colonnesd.webp');
     right: 0;
     top: 0;
     height: 100%;

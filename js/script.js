@@ -71,7 +71,7 @@ function toggleMenu() {
 // Événements
 document.addEventListener("DOMContentLoaded", function() {
     // Charger la navbar
-    fetch('{{ site.baseurl }}/Accueil/header.html')
+    fetch('../Accueil/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Erreur de chargement du header:', error));
 
     // Charger le footer
-    fetch('{{ site.baseurl }}/accueil/footer.html')
+    fetch('../accueil/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
