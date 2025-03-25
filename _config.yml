@@ -1,0 +1,12 @@
+title: projet-lords-mobile-index
+email: jo.petrazoller@gmail.com
+description: "Un site qui contient des informations sur le jeu Lords Mobile"
+baseurl: "" # Laisse vide si ton site est à la racine de GitHub Pages
+url: "https://joel-p67.github.io" # Mets l'URL de ton dépôt GitHub Pages
+twitter_username: @jo_petrazoller
+github_username: joel-p67
+
+# Paramètres de construction
+theme: minima # Si tu utilises le thème minima
+plugins:
+  - jekyll-feed
