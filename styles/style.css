@@ -28,12 +28,12 @@ body {
 }
 
 .fond {
-    background-image: url('../img/fond-de-site-00.webp');
+    background-image: url("/projet-lords-mobile-index/img/fond-de-site-00.webp");
     z-index: 1;
 }
 
 .colonnes-g {
-    background-image: url('../img/colonnesg.webp');
+    background-image: url("/projet-lords-mobile-index/img/colonnesg.webp");
     left: 0;
     top: 0;
     height: 100%;
@@ -43,7 +43,7 @@ body {
 }
 
 .colonnes-d {
-    background-image: url('../img/colonnesd.webp');
+    background-image: url("/projet-lords-mobile-index/img/colonnesd.webp");
     right: 0;
     top: 0;
     height: 100%;
@@ -314,7 +314,6 @@ nav {
 
 }
 
-
 /* Styles pour le footer */
 footer {
     background-color: #0f4568;
@@ -383,6 +382,7 @@ footer {
         margin: 5px 10px; /* Réduit l'espace entre les liens */
     }
 }
+
 
 
 

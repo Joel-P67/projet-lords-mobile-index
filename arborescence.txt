@@ -1,0 +1,228 @@
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---        25/03/2025     23:17                accueil
+d-r---        25/03/2025     19:53                footer
+d-r---        25/03/2025     19:53                img
+d-r---        25/03/2025     19:53                js
+d-r---        25/03/2025     19:53                les-batiments
+d-r---        25/03/2025     19:53                les-coffres
+d-r---        25/03/2025     19:53                les-equipements
+d-r---        25/03/2025     19:53                les-evenements
+d-r---        25/03/2025     19:53                les-familiers
+d-r---        25/03/2025     19:53                les-monstres
+d-r---        25/03/2025     19:53                les-recherches
+d-r---        25/03/2025     19:53                les-talents
+d-r---        25/03/2025     19:53                styles
+-a----        25/03/2025     22:01            243 .editorconfig
+-a----        25/03/2025     22:22            574 footer.html
+-a----        25/03/2025     22:22           5438 header.html
+-a----        25/03/2025     23:20           1950 index.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\accueil
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     20:04             19 accueil.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\footer
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:19           3311 a-propos.html
+-a----        25/03/2025     22:22           5967 dons.html
+-a----        25/03/2025     22:22           5979 mentions-legales.html
+-a----        25/03/2025     22:22           2545 nous-contacter.html
+-a----        25/03/2025     20:04            878 nous-contacter.php
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\img
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     20:04         502675 bienvenue.png
+-a----        25/03/2025     20:04        1389693 colonnesd-399x1440.png
+-a----        25/03/2025     20:04         640862 colonnesd.webp
+-a----        25/03/2025     20:04        1349010 colonnesg-399x1440.png
+-a----        25/03/2025     20:04         654810 colonnesg.webp
+-a----        25/03/2025     20:04         763005 fond-de-site-00.png
+-a----        25/03/2025     20:04         510156 fond-de-site-00.webp
+-a----        25/03/2025     20:04          26697 icon-128x128.PNG
+-a----        25/03/2025     20:04           1058 icon-16x16.PNG
+-a----        25/03/2025     20:04          45877 icon-180x180.PNG
+-a----        25/03/2025     20:04          50816 icon-192x192.PNG
+-a----        25/03/2025     20:04           2799 icon-32x32.PNG
+-a----        25/03/2025     20:04           5353 icon-48x48.PNG
+-a----        25/03/2025     20:04         216246 icon-512x512.PNG
+-a----        25/03/2025     20:04           8601 icon-64x64.PNG
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\js
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     20:04           3882 script.js
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-batiments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5971 academie.html
+-a----        25/03/2025     22:22           5970 atelier.html
+-a----        25/03/2025     22:22           5968 autel.html
+-a----        25/03/2025     22:22           5982 aventures-des-heros.html
+-a----        25/03/2025     22:22           5981 batiments-avances.html
+-a----        25/03/2025     22:22           5986 batiments-des-familiers.html
+-a----        25/03/2025     22:22           5987 batiments-des-ressources.html
+-a----        25/03/2025     22:22           5982 batiments-standards.html
+-a----        25/03/2025     22:22           5984 batiments-utilitaires.html
+-a----        25/03/2025     22:22           5968 bazar.html
+-a----        25/03/2025     22:22           5967 camp.html
+-a----        25/03/2025     22:22           5972 carrière.html
+-a----        25/03/2025     22:22           5976 chambre-forte.html
+-a----        25/03/2025     22:22           5970 chateau.html
+-a----        25/03/2025     22:22           5976 cime-mystique.html
+-a----        25/03/2025     22:22           5970 colisee.html
+-a----        25/03/2025     22:22           5968 ferme.html
+-a----        25/03/2025     22:22           5979 fonderie-lunaire.html
+-a----        25/03/2025     22:22           5979 hall-de-bataille.html
+-a----        25/03/2025     22:22           5982 hall-des-artefacts.html
+-a----        25/03/2025     22:22           5980 hall-des-monstres.html
+-a----        25/03/2025     22:22           5979 ile-de-synthèse.html
+-a----        25/03/2025     22:22           5973 infirmerie.html
+-a----        25/03/2025     22:22           5973 labyrinthe.html
+-a----        25/03/2025     22:22           5969 manoir.html
+-a----        25/03/2025     22:22           5967 mine.html
+-a----        25/03/2025     22:22           5979 navire-de-charge.html
+-a----        25/03/2025     22:22           5969 prison.html
+-a----        25/03/2025     22:22           5969 refuge.html
+-a----        25/03/2025     22:22           5981 royaume-du-pouvoir.html
+-a----        25/03/2025     22:22           5978 salle-au-tresor.html
+-a----        25/03/2025     22:22           5973 sanctuaire.html
+-a----        25/03/2025     22:22           5970 scierie.html
+-a----        25/03/2025     22:22           5969 source.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-coffres
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5983 coffres-d-evenements.html
+-a----        25/03/2025     22:22           5980 coffres-standards.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-equipements
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5972 astralite.html
+-a----        25/03/2025     22:22           5980 cabine-d-essayage.html
+-a----        25/03/2025     22:22           5969 joyaux.html
+-a----        25/03/2025     22:22           5992 sets-d-equipements-recommande.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-evenements
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5977 arene-du-chaos.html
+-a----        25/03/2025     22:22           5978 arene-du-dragon.html
+-a----        25/03/2025     22:22           5977 bash-de-guilde.html
+-a----        25/03/2025     22:22           5986 bataille-des-merveilles.html
+-a----        25/03/2025     22:22           5981 bataille-du-calice.html
+-a----        25/03/2025     22:22           5978 bataille-royale.html
+-a----        25/03/2025     22:22           5976 challenge-24h.html
+-a----        25/03/2025     22:22           5984 choc-des-royaumes-kvk.html
+-a----        25/03/2025     22:22           5986 confrontation-de-guilde.html
+-a----        25/03/2025     22:22           5982 coupe-des-seigneurs.html
+-a----        25/03/2025     22:22           5988 croisade-des-sombres-nids.html
+-a----        25/03/2025     22:22           5975 defi-limité.html
+-a----        25/03/2025     22:22           5981 evenement-infernal.html
+-a----        25/03/2025     22:22           5977 evenement-solo.html
+-a----        25/03/2025     22:22           5994 evenements-de-grandes-batailles.html
+-a----        25/03/2025     22:22           5983 evenements-de-guilde.html
+-a----        25/03/2025     22:22           5985 evenements-de-monstres.html
+-a----        25/03/2025     22:22           5984 evenements-du-royaume.html
+-a----        25/03/2025     22:22           5987 evenements-du-territoire.html
+-a----        25/03/2025     22:22           5983 expedition-de-guilde.html
+-a----        25/03/2025     22:22           5977 guerre-feodale.html
+-a----        25/03/2025     22:22           5974 guilde-fest.html
+-a----        25/03/2025     22:22           5987 l-heure-des-super-gemmes.html
+-a----        25/03/2025     22:22           5989 magasin-la-bonnes-affaire.html
+-a----        25/03/2025     22:22           5985 une-presence-sournoise.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-familiers
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5971 pacte-1a.html
+-a----        25/03/2025     22:22           5971 pacte-1b.html
+-a----        25/03/2025     22:22           5971 pacte-2a.html
+-a----        25/03/2025     22:22           5971 pacte-2b.html
+-a----        25/03/2025     22:22           5970 pacte-3.html
+-a----        25/03/2025     22:22           5970 pacte-4.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-monstres
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5984 les-equipes-de-chasse.html
+-a----        25/03/2025     22:22           5975 les-monstres.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-recherches
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:22           5980 ameliorer-l-armee.html
+-a----        25/03/2025     22:22           5983 ameliorer-la-defense.html
+-a----        25/03/2025     22:22           5985 batailles-de-familiers.html
+-a----        25/03/2025     22:22           5985 batailles-de-merveille.html
+-a----        25/03/2025     22:22           5994 batailles-de-merveilles-avancee.html
+-a----        25/03/2025     22:22           5980 chasse-au-monstre.html
+-a----        25/03/2025     22:22           5985 commandement-militaire.html
+-a----        25/03/2025     22:22           5970 defense.html
+-a----        25/03/2025     22:22           5978 direction-armee.html
+-a----        25/03/2025     22:22           5971 economie.html
+-a----        25/03/2025     22:22           5973 equipement.html
+-a----        25/03/2025     22:22           5976 eveil-du-mana.html
+-a----        25/03/2025     22:22           5972 familiers.html
+-a----        25/03/2025     22:20           5972 militaire.html
+-a----        25/03/2025     22:22           5969 sceaux.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\les-talents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     22:20           5991 exemples-d-arbres-de-talents.html
+-a----        25/03/2025     22:20           5974 les-talents.html
+
+
+    Répertoire : C:\Users\jopet\OneDrive\Dokument\projet-lords-mobile-index\styles
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25/03/2025     20:04           1142 code-couleur.txt
+-a----        25/03/2025     20:04           4582 content.css
+-a----        25/03/2025     20:04          10207 style.css
