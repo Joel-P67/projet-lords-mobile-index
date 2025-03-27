@@ -1,0 +1,190 @@
+/* Navbar */
+nav {
+    background-color: #0f4568;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Prendre toute la largeur */
+    z-index: 10; /* Pour que la navbar soit au-dessus de l'overlay */
+}
+
+/* Liste de la navbar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Prendre toute la largeur */
+}
+
+/* Style des éléments de menu */
+.nav-item {
+    position: relative;
+}
+
+/* Style des liens (avec logo ou texte) */
+.nav-item > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+    background-color: #0f4568;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
+    border-radius: 0px; /* Pas de bordure arrondie par défaut */
+}
+
+/* Changement de couleur au survol */
+.nav-item > a:hover {
+    background-color: #1c85b0;
+    border-radius: 25px; /* Applique une forme arrondie au survol */
+}
+
+/* Style de l'image du logo pour l'onglet "Accueil" */
+.nav-item a .logo {
+    width: 24px; /* Largeur du logo (ajuste à ta préférence) */
+    height: auto; /* Garde les proportions */
+    margin-right: 10px; /* Espace entre le logo et le texte */
+    vertical-align: middle; /* Aligne l'image avec le texte */
+}
+
+/* Affichage des sous-menus (si tu en as) */
+.submenu {
+    background-color: #15608b;
+    color: white;
+    list-style-type: none;
+    position: absolute;
+    padding-left: 0;  /* Si un padding gauche est appliqué */
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 30;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav-item:hover .submenu,
+.nav-item.active .submenu {
+    max-height: 500px; /* Une valeur suffisante pour afficher tout le contenu */
+    overflow-y: auto;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+/* Style des éléments de sous-menu */
+.submenu li a {
+    background-color: #15608b;
+    transition: background-color 0.3s ease;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #76b4c3;
+}
+
+
+/* Affichage du sous-menu au survol (grand format) */
+.nav-item:hover .submenu {
+    display: block;
+}
+
+/* Menu hamburger (si nécessaire) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0f4568;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    /* Gestion du sous-menu sur mobile */
+    .submenu {
+        position: static;
+        width: 100%;
+        display: none;
+        max-height: 50vh; /* Limite la hauteur pour les petits écrans */
+        overflow-y: auto; /* Permet le scroll si nécessaire */
+    }
+
+    .nav-item.active .submenu {
+        display: block;
+    }
+}
+
+/* Empêcher le sous-menu de dépasser la hauteur de la fenêtre sur les grands écrans */
+.nav-item:nth-child(2) .submenu {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Styles pour les barres de défilement uniformes */
+.submenu::-webkit-scrollbar,
+.element::-webkit-scrollbar {
+    width: 8px; /* Ajuste la largeur pour être plus discrète */
+    scrollbar-width: thin;
+}
+
+.submenu::-webkit-scrollbar-track,
+.element::-webkit-scrollbar-track {
+    background: rgba(15,69,104, 0.5);
+}
+
+.submenu::-webkit-scrollbar-thumb,
+.element::-webkit-scrollbar-thumb {
+    background-color: #1c85b0;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .submenu::-webkit-scrollbar {
+        width: 12px; /* Augmente la largeur de la barre de défilement pour la rendre plus visible */
+        scrollbar-width: thin;
+    }
+
+    .submenu::-webkit-scrollbar-track {
+        background: rgba(15,69,104, 0.3); /* Garde le fond de la piste de défilement */
+    }
+
+    .submenu::-webkit-scrollbar-thumb {
+        background-color: rgba(28,133,176, 0.7); /* Change la couleur de la barre de défilement pour la rendre plus visible */
+        border-radius: 10px;
+    }
+
+}

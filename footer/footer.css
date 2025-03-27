@@ -1,0 +1,74 @@
+/* Styles pour le footer */
+footer {
+    background-color: #0f4568;
+    color: white;
+    padding: 2px 0; /* Réduit encore la hauteur du footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Pour qu'il reste au-dessus du contenu */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    font-size: 12px; /* Réduit la taille de la police */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux liens de se répartir sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centrer les liens */
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px; /* Ajoute un espace entre les liens */
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px; /* Réduit la taille du texte */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
+    border-radius: 0px; /* Pas de bordure arrondie par défaut */
+}
+
+.footer-links li a:hover {
+    background-color: #1c85b0;
+    border-radius: 25px;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 600px) {
+    footer {
+        padding: 5px 0; /* Réduit l'espace vertical sur les petits écrans */
+    }
+
+    .footer-content {
+        font-size: 10px; /* Réduit la taille de la police sur petits écrans */
+    }
+
+    .footer-links li {
+        margin: 5px 10px; /* Réduit l'espace entre les liens */
+    }
+}
+
+.footer-links a:hover,
+.footer-links a:focus,
+.footer-links a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}

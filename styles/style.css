@@ -6,10 +6,17 @@ body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+    padding-bottom: 2px;
     margin: 0;
     padding: 0;
     background-color: #7dc0f7;
     overflow-x: hidden; /* Empêche le débordement horizontal */
+}
+
+h1, h2, h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #d4c380; /* Couleur dorée pour les titres */
 }
 
 .background-container {
@@ -30,6 +37,8 @@ body {
 .fond {
     background-image: url("/projet-lords-mobile-index/img/fond-de-site-00.webp");
     z-index: 1;
+    width: 100%;
+    width: 100%;
 }
 
 .colonnes-g {
@@ -37,8 +46,9 @@ body {
     left: 0;
     top: 0;
     height: 100%;
-    background-size: cover; /* L'image couvre tout l'espace disponible */
+    background-size: contain;
     background-position: left center; /* Positionne l'image à gauche */
+    width: 100%;
     z-index: 2;
 }
 
@@ -49,6 +59,7 @@ body {
     height: 100%;
     background-size: cover; /* L'image couvre tout l'espace disponible */
     background-position: right center; /* Positionne l'image à droite */
+    width: 100%;
     z-index: 3;
 }
 
@@ -79,26 +90,6 @@ body {
     flex-direction: column;
 }
 
-.element {
-    overflow-y: auto; /* Active le scroll interne */
-    max-height: 85vh; /* Définit une hauteur maximale pour le texte */
-    padding-right: 10px; /* Ajoute un peu d'espace pour éviter que le scroll cache le texte */
-}
-
-/* Styles pour la barre de défilement dans l'élément */
-.element::-webkit-scrollbar {
-    width: 10px; /* Largeur de la barre de défilement */
-}
-
-.element::-webkit-scrollbar-track {
-    background: rgba(15,69,104, 0.3); /* Fond de la piste de défilement */
-}
-
-.element::-webkit-scrollbar-thumb {
-    background-color: rgba(28,133,176, 0.7); /* Couleur de la barre */
-    border-radius: 10px; /* Bords arrondis pour la barre */
-}
-
 /* Responsivité pour petits écrans */
 @media (max-width: 768px) {
     .overlay {
@@ -125,264 +116,216 @@ body {
     margin-top: 50px; /* Ajuste cette valeur pour le mobile */
 }
 
-/* Navbar */
-nav {
-    background-color: #0f4568;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Prendre toute la largeur */
-    z-index: 10; /* Pour que la navbar soit au-dessus de l'overlay */
+/* Applique les styles uniquement à l'intérieur de .element */
+
+.element {
+    overflow-y: auto; /* Active le scroll interne */
+    max-height: 85vh; /* Définit une hauteur maximale pour le texte */
+    padding-right: 10px; /* Ajoute un peu d'espace pour éviter que le scroll cache le texte */
 }
 
-/* Liste de la navbar */
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Prendre toute la largeur */
-}
-
-/* Style des éléments de menu */
-.nav-item {
-    position: relative;
-}
-
-/* Style des liens (avec logo ou texte) */
-.nav-item > a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center; /* Centre verticalement l'image et le texte */
-    background-color: #0f4568;
-    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
-    border-radius: 0px; /* Pas de bordure arrondie par défaut */
-}
-
-/* Changement de couleur au survol */
-.nav-item > a:hover {
-    background-color: #1c85b0;
-    border-radius: 25px; /* Applique une forme arrondie au survol */
-}
-
-/* Style de l'image du logo pour l'onglet "Accueil" */
-.nav-item a .logo {
-    width: 24px; /* Largeur du logo (ajuste à ta préférence) */
-    height: auto; /* Garde les proportions */
-    margin-right: 10px; /* Espace entre le logo et le texte */
-    vertical-align: middle; /* Aligne l'image avec le texte */
-}
-
-/* Affichage des sous-menus (si tu en as) */
-.submenu {
-    background-color: #15608b;
-    color: white;
-    list-style-type: none;
-    position: absolute;
-    padding-left: 0;  /* Si un padding gauche est appliqué */
-    top: 100%;
-    left: 0;
-    min-width: 160px;
-    z-index: 30;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.nav-item:hover .submenu,
-.nav-item.active .submenu {
-    max-height: 500px; /* Une valeur suffisante pour afficher tout le contenu */
-    overflow-y: auto;
-}
-
-.submenu a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 5px;
-}
-
-/* Style des éléments de sous-menu */
-.submenu li a {
-    background-color: #15608b;
-    transition: background-color 0.3s ease;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: block;
-}
-
-.submenu li a:hover {
-    background-color: #76b4c3;
-}
-
-
-/* Affichage du sous-menu au survol (grand format) */
-.nav-item:hover .submenu {
-    display: block;
-}
-
-/* Menu hamburger (si nécessaire) */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-/* Responsivité pour petits écrans */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Navbar */
-    .navbar {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #0f4568;
-        position: absolute;
-        top: 50px;
-        left: 0;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    /* Gestion du sous-menu sur mobile */
-    .submenu {
-        position: static;
-        width: 100%;
-        display: none;
-        max-height: 50vh; /* Limite la hauteur pour les petits écrans */
-        overflow-y: auto; /* Permet le scroll si nécessaire */
-    }
-
-    .nav-item.active .submenu {
-        display: block;
-    }
-}
-
-/* Empêcher le sous-menu de dépasser la hauteur de la fenêtre sur les grands écrans */
-.nav-item:nth-child(2) .submenu {
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
-/* Styles pour les barres de défilement uniformes */
-.submenu::-webkit-scrollbar,
+/* Styles pour la barre de défilement dans l'élément */
 .element::-webkit-scrollbar {
-    width: 8px; /* Ajuste la largeur pour être plus discrète */
+    width: 10px; /* Largeur de la barre de défilement */
 }
 
-.submenu::-webkit-scrollbar-track,
 .element::-webkit-scrollbar-track {
-    background: rgba(15,69,104, 0.5);
+    background: rgba(15,69,104, 0.3); /* Fond de la piste de défilement */
 }
 
-.submenu::-webkit-scrollbar-thumb,
 .element::-webkit-scrollbar-thumb {
-    background-color: #1c85b0;
-    border-radius: 5px;
+    background-color: rgba(28,133,176, 0.7); /* Couleur de la barre */
+    border-radius: 10px; /* Bords arrondis pour la barre */
 }
 
-@media (max-width: 768px) {
-    .submenu::-webkit-scrollbar {
-        width: 12px; /* Augmente la largeur de la barre de défilement pour la rendre plus visible */
-    }
-
-    .submenu::-webkit-scrollbar-track {
-        background: rgba(15,69,104, 0.3); /* Garde le fond de la piste de défilement */
-    }
-
-    .submenu::-webkit-scrollbar-thumb {
-        background-color: rgba(28,133,176, 0.7); /* Change la couleur de la barre de défilement pour la rendre plus visible */
-        border-radius: 10px;
-    }
-
-}
-
-/* Styles pour le footer */
-footer {
-    background-color: #0f4568;
+.element {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
-    padding: 2px 0; /* Réduit encore la hauteur du footer */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10; /* Pour qu'il reste au-dessus du contenu */
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center; /* Centrer les éléments horizontalement */
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 10px;
-    font-size: 12px; /* Réduit la taille de la police */
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-}
-
-.footer-links {
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Permet aux liens de se répartir sur plusieurs lignes si nécessaire */
-    justify-content: center; /* Centrer les liens */
+    padding: 10px;
+    text-align: center;
 }
 
-.footer-links li {
-    display: inline;
-    margin: 0 10px; /* Ajoute un espace entre les liens */
+.element h1 {
+    color: #d4c380;
 }
 
-.footer-links li a {
-    color: white;
+.element h2 {
+    color: #4cf4f4; 
+}
+
+.element img, 
+.element video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ajout pour éviter la déformation */
+}
+
+.element th, 
+.element td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.element video {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Pour les tablettes (≥ 768px) */
+@media (min-width: 768px) {
+    .element table {
+        padding: 5px; /* Moins d'espace intérieur sur les petits écrans */
+        max-width: 90%; /* Évite que les tableaux soient trop larges */
+    }
+}
+
+/* Pour les écrans larges (≥ 1024px) */
+@media (min-width: 1024px) {
+    .element {
+        padding: 10px; /* Augmente l'espace intérieur sur grand écran */
+    }
+
+    .element img, 
+    .element video {
+        max-width: 80%; /* Réduit légèrement la taille pour ne pas être trop grand */
+    }
+}
+
+/* Styles pour les éléments spécifiques dans .element */
+.element .about-title {
+    font-size: 2em;
+}
+
+.element .about-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.element .about-list {
+    list-style-type: square;
+    margin-top: 10px;
+}
+
+.element .about-list li {
+    margin-bottom: 8px;
+}
+
+/* Nous contacter */
+.element .contact {
+    background-color: rgba(28, 133, 176, 0.1); /* Bleu clair avec opacité */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+.element .contact h2 {
+    color: #d4c380; /* Couleur pour les titres */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Contour subtil des lettres */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Texte descriptif */
+.element .contact p {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Lien mailto */
+.element .contact a {
+    color: #4cf4f4; /* Couleur pour les liens */
     text-decoration: none;
-    font-size: 12px; /* Réduit la taille du texte */
-    padding: 5px 10px;
-    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
-    border-radius: 0px; /* Pas de bordure arrondie par défaut */
+    font-weight: bold;
 }
 
-.footer-links li a:hover {
-    background-color: #1c85b0;
-    border-radius: 25px;
+.element .contact a:hover {
+    color: #1c85b0; /* Bleu clair au survol */
 }
 
-/* Responsivité pour petits écrans */
+/* Formulaire */
+.element .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.element .contact input, 
+.element .contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #d4c380; /* Bordure de couleur de titre */
+    background-color: rgba(28, 133, 176, 0.1); /* Fond similaire à la section */
+    color: #ffffff;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire */
+.element .contact textarea {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #d4c380; /* Bordure de couleur de titre */
+    background-color: rgba(28, 133, 176, 0.1); /* Fond similaire à la section */
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'M PLUS Rounded 1c', sans-serif; /* Application de la même police */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.element .contact input::placeholder, 
+.element .contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.element .contact input:focus, 
+.element .contact textarea:focus {
+    border-color: #4cf4f4; /* Bordure bleu clair au focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 244, 244, 0.6); /* Légère ombre au focus */
+}
+
+.element .contact button {
+    background-color: #15608b; 
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.element .contact button:active {
+    transform: scale(0.95);
+}
+
+.element .contact button:hover {
+    background-color: #1c85b0; /* Bleu clair au survol */
+}
+
+.element .contact input, 
+.element .contact textarea {
+    transition: all 0.3s ease-in-out;
+}
+
 @media (max-width: 600px) {
-    footer {
-        padding: 5px 0; /* Réduit l'espace vertical sur les petits écrans */
-    }
-
-    .footer-content {
-        font-size: 10px; /* Réduit la taille de la police sur petits écrans */
-    }
-
-    .footer-links li {
-        margin: 5px 10px; /* Réduit l'espace entre les liens */
+    .element .contact {
+        padding: 20px;
     }
 }
-
-
 
 

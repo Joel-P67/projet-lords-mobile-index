@@ -71,7 +71,7 @@ function toggleMenu() {
 // Événements
 document.addEventListener("DOMContentLoaded", function() {
     // Charger la navbar
-    fetch('/projet-lords-mobile-index/header.html') // Chemin absolu vers la racine
+    fetch('/projet-lords-mobile-index/header/header.html') // Chemin absolu vers la racine
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Erreur de chargement du header:', error));
 
     // Charger le footer
-    fetch('/projet-lords-mobile-index/footer.html') // Chemin absolu vers la racine
+    fetch('/projet-lords-mobile-index/footer/footer.html') // Chemin absolu vers la racine
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
