@@ -2,7 +2,7 @@
 
 .element .batiments-avances {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Par défaut, une seule colonne */
     gap: 10px;
     background: transparent;
     list-style: none;
@@ -32,15 +32,19 @@
     margin-top: 5px;
 }
 
+/* À partir de 600px, 2 colonnes */
 @media (min-width: 600px) {
     .element .batiments-avances {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+        grid-template-rows: repeat(3, auto); /* 3 lignes pour 5 éléments */
     }
 }
 
+/* À partir de 900px, 3 colonnes */
 @media (min-width: 900px) {
     .element .batiments-avances {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+        grid-template-rows: repeat(2, auto); /* 2 lignes pour 5 éléments */
     }
 }
 
