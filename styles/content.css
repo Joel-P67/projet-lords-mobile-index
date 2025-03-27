@@ -54,7 +54,7 @@
 /* Pour les écrans larges (≥ 1024px) */
 @media (min-width: 1024px) {
     .element {
-        padding: 40px; /* Augmente l'espace intérieur sur grand écran */
+        padding: 10px; /* Augmente l'espace intérieur sur grand écran */
     }
 
     .element img, 

@@ -2,7 +2,7 @@
 
 .element .batiments-avances {
     display: grid;
-    grid-template-columns: 1fr; /* Par défaut, une seule colonne */
+    grid-template-columns: 1fr;
     gap: 10px;
     background: transparent;
     list-style: none;
