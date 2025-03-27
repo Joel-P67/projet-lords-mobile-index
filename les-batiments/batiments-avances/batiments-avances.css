@@ -9,19 +9,19 @@
     place-items: center; /* Centre les éléments */
 }
 
-.element .batiment {
+.batiment {
     text-align: center;
     max-width: 100%; /* Évite la limitation à 200px */
 }
 
-.element .batiment a img {
+.batiment a img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
 }
 
-.element .batiment a {
+.batiment a {
     text-decoration: none;
     font-weight: bold;
     display: block;
