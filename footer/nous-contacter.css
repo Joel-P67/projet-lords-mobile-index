@@ -1,0 +1,95 @@
+/* nous-contacter.css */
+
+/* Styles de la section de contact */
+.element .contact {
+    background-color: rgba(28, 133, 176, 0.1); /* Bleu clair avec opacité */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+.element .contact h1 {
+    color: #d4c380; /* Couleur pour les titres */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+.element .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Champ de texte et de saisie */
+.element .contact input, 
+.element .contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #d4c380; /* Bordure de couleur de titre */
+    background-color: rgba(28, 133, 176, 0.1); /* Fond similaire à la section */
+    color: #ffffff;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder dans les champs */
+.element .contact input::placeholder, 
+.element .contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus sur les champs de saisie */
+.element .contact input:focus, 
+.element .contact textarea:focus {
+    border-color: #4cf4f4; /* Bordure bleu clair au focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 244, 244, 0.6); /* Légère ombre au focus */
+}
+
+/* Bouton de soumission */
+.element .contact button {
+    background-color: #15608b; 
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.element .contact button:active {
+    transform: scale(0.95);
+}
+
+.element .contact button:hover {
+    background-color: #1c85b0; /* Bleu clair au survol */
+}
+
+/* Section de contact sur petits écrans */
+@media (max-width: 600px) {
+    .element .contact {
+        padding: 20px;
+    }
+
+    .element .contact h1 {
+        font-size: 1.5em; /* Réduit la taille du titre */
+    }
+
+    .element .contact form {
+        gap: 10px; /* Réduit l'espace entre les éléments du formulaire */
+    }
+
+    .element .contact input,
+    .element .contact textarea {
+        max-width: 100%; /* Utilise toute la largeur disponible sur les petits écrans */
+    }
+}
