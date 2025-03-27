@@ -9,6 +9,7 @@
     list-style: none;
     width: 100%;
     place-items: center; /* Centre les éléments */
+    overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
 .batiment {
@@ -21,10 +22,12 @@
     height: auto;
     display: block;
     border-radius: 10px;
+    object-fit: contain; /* Cela aide à éviter que l'image déborde */
 }
 
 .batiment a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
     display: block;
     margin-top: 5px;
@@ -41,3 +44,4 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
