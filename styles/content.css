@@ -24,13 +24,6 @@
     object-fit: cover; /* Ajout pour éviter la déformation */
 }
 
-.element table {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-    border-collapse: collapse;
-}
-
 .element th, 
 .element td {
     border: 1px solid white;
@@ -60,10 +53,6 @@
     .element img, 
     .element video {
         max-width: 80%; /* Réduit légèrement la taille pour ne pas être trop grand */
-    }
-
-    .element table {
-        max-width: 70%; /* Limite la largeur des tableaux */
     }
 }
 
