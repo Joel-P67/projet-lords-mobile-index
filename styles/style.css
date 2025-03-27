@@ -124,20 +124,6 @@ h1, h2, h3 {
     padding-right: 10px; /* Ajoute un peu d'espace pour éviter que le scroll cache le texte */
 }
 
-/* Styles pour la barre de défilement dans l'élément */
-.element::-webkit-scrollbar {
-    width: 10px; /* Largeur de la barre de défilement */
-}
-
-.element::-webkit-scrollbar-track {
-    background: rgba(15,69,104, 0.3); /* Fond de la piste de défilement */
-}
-
-.element::-webkit-scrollbar-thumb {
-    background-color: rgba(28,133,176, 0.7); /* Couleur de la barre */
-    border-radius: 10px; /* Bords arrondis pour la barre */
-}
-
 .element {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
@@ -162,24 +148,9 @@ h1, h2, h3 {
     object-fit: cover; /* Ajout pour éviter la déformation */
 }
 
-.element th, 
-.element td {
-    border: 1px solid white;
-    padding: 10px;
-    text-align: center;
-}
-
 .element video {
     display: block;
     margin: 0 auto;
-}
-
-/* Pour les tablettes (≥ 768px) */
-@media (min-width: 768px) {
-    .element table {
-        padding: 5px; /* Moins d'espace intérieur sur les petits écrans */
-        max-width: 90%; /* Évite que les tableaux soient trop larges */
-    }
 }
 
 /* Pour les écrans larges (≥ 1024px) */
@@ -192,134 +163,6 @@ h1, h2, h3 {
     .element video {
         max-width: 80%; /* Réduit légèrement la taille pour ne pas être trop grand */
     }
-}
-
-/* Styles pour les éléments spécifiques dans .element */
-.element .about-title {
-    font-size: 2em;
-}
-
-.element .about-text {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.element .about-list {
-    list-style-type: square;
-    margin-top: 10px;
-}
-
-.element .about-list li {
-    margin-bottom: 8px;
-}
-
-/* Nous contacter */
-.element .contact {
-    background-color: rgba(28, 133, 176, 0.1); /* Bleu clair avec opacité */
-    border-radius: 10px;
-    padding: 30px;
-    margin: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Titre */
-.element .contact h2 {
-    color: #d4c380; /* Couleur pour les titres */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Contour subtil des lettres */
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Texte descriptif */
-.element .contact p {
-    color: #ffffff;
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-
-/* Lien mailto */
-.element .contact a {
-    color: #4cf4f4; /* Couleur pour les liens */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.element .contact a:hover {
-    color: #1c85b0; /* Bleu clair au survol */
-}
-
-/* Formulaire */
-.element .contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.element .contact input, 
-.element .contact textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #d4c380; /* Bordure de couleur de titre */
-    background-color: rgba(28, 133, 176, 0.1); /* Fond similaire à la section */
-    color: #ffffff;
-    font-size: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Formulaire */
-.element .contact textarea {
-    width: 100%;
-    max-width: 500px;
-    min-height: 100px;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #d4c380; /* Bordure de couleur de titre */
-    background-color: rgba(28, 133, 176, 0.1); /* Fond similaire à la section */
-    color: #ffffff;
-    font-size: 1em;
-    font-family: 'M PLUS Rounded 1c', sans-serif; /* Application de la même police */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-.element .contact input::placeholder, 
-.element .contact textarea::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.element .contact input:focus, 
-.element .contact textarea:focus {
-    border-color: #4cf4f4; /* Bordure bleu clair au focus */
-    outline: none;
-    box-shadow: 0 0 5px rgba(76, 244, 244, 0.6); /* Légère ombre au focus */
-}
-
-.element .contact button {
-    background-color: #15608b; 
-    color: #ffffff;
-    padding: 12px 30px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.element .contact button:active {
-    transform: scale(0.95);
-}
-
-.element .contact button:hover {
-    background-color: #1c85b0; /* Bleu clair au survol */
-}
-
-.element .contact input, 
-.element .contact textarea {
-    transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 600px) {
