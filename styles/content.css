@@ -4,7 +4,7 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -46,7 +46,7 @@
 /* Pour les tablettes (≥ 768px) */
 @media (min-width: 768px) {
     .element table {
-        padding: 10px; /* Moins d'espace intérieur sur les petits écrans */
+        padding: 5px; /* Moins d'espace intérieur sur les petits écrans */
         max-width: 90%; /* Évite que les tableaux soient trop larges */
     }
 }
