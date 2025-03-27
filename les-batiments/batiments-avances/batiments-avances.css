@@ -1,0 +1,41 @@
+.element .batiments-avances {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    background: transparent;
+    list-style: none;
+    width: 100%;
+    place-items: center; /* Centre les éléments */
+}
+
+.element .batiment {
+    text-align: center;
+    max-width: 100%; /* Évite la limitation à 200px */
+}
+
+.element .batiment a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.element .batiment a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+@media (min-width: 600px) {
+    .element .batiments-avances {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .element .batiments-avances {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
