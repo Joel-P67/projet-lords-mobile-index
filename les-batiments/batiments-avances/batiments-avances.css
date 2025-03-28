@@ -27,6 +27,10 @@
     max-width: 100%; /* Assure que l'image ne dépasse pas son conteneur */
 }
 
+.batiment a:hover img {
+    transform: scale(1.1); /* L'image grossit légèrement au survol */
+}
+
 .batiment a {
     text-decoration: none;
     color: white;
@@ -34,6 +38,10 @@
     display: block;
     margin-top: 5px;
     max-width: 100%; /* Empêche le lien de déborder */
+}
+
+.batiment a:hover {
+    color: #1c85b0;
 }
 
 /* Responsivité à partir de 600px */
