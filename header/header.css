@@ -1,3 +1,5 @@
+/* header.css */
+
 /* Navbar */
 nav {
     background-color: #0f4568;
@@ -9,8 +11,8 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Prendre toute la largeur */
-    z-index: 10; /* Pour que la navbar soit au-dessus de l'overlay */
+    width: 100%;
+    z-index: 10;
 }
 
 /* Liste de la navbar */
@@ -20,7 +22,7 @@ nav {
     padding: 0;
     display: flex;
     justify-content: center;
-    width: 100%; /* Prendre toute la largeur */
+    width: 100%;
 }
 
 /* Style des éléments de menu */
@@ -34,24 +36,31 @@ nav {
     text-decoration: none;
     padding: 10px 20px;
     display: flex;
-    align-items: center; /* Centre verticalement l'image et le texte */
+    align-items: center; 
     background-color: #0f4568;
-    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition pour la couleur et la forme */
-    border-radius: 0px; /* Pas de bordure arrondie par défaut */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 0px;
 }
 
 /* Changement de couleur au survol */
 .nav-item > a:hover {
     background-color: #1c85b0;
-    border-radius: 25px; /* Applique une forme arrondie au survol */
+    border-radius: 25px;
+}
+
+/* Mise en valeur au focus (pour la navigation au clavier) */
+.nav-item > a:focus {
+    background-color: #1c85b0; /* Couleur de fond au focus */
+    outline: none; /* Enlever le contour par défaut */
+    border-radius: 25px; /* Ajouter un rayon pour arrondir les bords */
 }
 
 /* Style de l'image du logo pour l'onglet "Accueil" */
 .nav-item a .logo {
-    width: 24px; /* Largeur du logo (ajuste à ta préférence) */
-    height: auto; /* Garde les proportions */
-    margin-right: 10px; /* Espace entre le logo et le texte */
-    vertical-align: middle; /* Aligne l'image avec le texte */
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* Affichage des sous-menus (si tu en as) */
@@ -60,7 +69,7 @@ nav {
     color: white;
     list-style-type: none;
     position: absolute;
-    padding-left: 0;  /* Si un padding gauche est appliqué */
+    padding-left: 0;
     top: 100%;
     left: 0;
     min-width: 160px;
@@ -70,9 +79,10 @@ nav {
     transition: max-height 0.3s ease-in-out;
 }
 
+/* Sous-menu affiché quand l'élément est survolé ou actif */
 .nav-item:hover .submenu,
 .nav-item.active .submenu {
-    max-height: 500px; /* Une valeur suffisante pour afficher tout le contenu */
+    max-height: 500px;
     overflow-y: auto;
 }
 
@@ -95,12 +105,6 @@ nav {
 
 .submenu li a:hover {
     background-color: #76b4c3;
-}
-
-
-/* Affichage du sous-menu au survol (grand format) */
-.nav-item:hover .submenu {
-    display: block;
 }
 
 /* Menu hamburger (si nécessaire) */
@@ -139,8 +143,8 @@ nav {
         position: static;
         width: 100%;
         display: none;
-        max-height: 50vh; /* Limite la hauteur pour les petits écrans */
-        overflow-y: auto; /* Permet le scroll si nécessaire */
+        max-height: 50vh;
+        overflow-y: auto;
     }
 
     .nav-item.active .submenu {
@@ -157,7 +161,7 @@ nav {
 /* Styles pour les barres de défilement uniformes */
 .submenu::-webkit-scrollbar,
 .element::-webkit-scrollbar {
-    width: 8px; /* Ajuste la largeur pour être plus discrète */
+    width: 8px;
     scrollbar-width: thin;
 }
 
@@ -174,17 +178,16 @@ nav {
 
 @media (max-width: 768px) {
     .submenu::-webkit-scrollbar {
-        width: 12px; /* Augmente la largeur de la barre de défilement pour la rendre plus visible */
+        width: 12px;
         scrollbar-width: thin;
     }
 
     .submenu::-webkit-scrollbar-track {
-        background: rgba(15,69,104, 0.3); /* Garde le fond de la piste de défilement */
+        background: rgba(15,69,104, 0.3);
     }
 
     .submenu::-webkit-scrollbar-thumb {
-        background-color: rgba(28,133,176, 0.7); /* Change la couleur de la barre de défilement pour la rendre plus visible */
+        background-color: rgba(28,133,176, 0.7);
         border-radius: 10px;
     }
-
 }

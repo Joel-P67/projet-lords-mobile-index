@@ -68,6 +68,24 @@ function toggleMenu() {
     menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
 }
 
+// Fonction de navigation au clavier (flèches haut/bas) pour les éléments de la navbar et footer
+function navigateWithKeyboard(event) {
+    const activeElement = document.activeElement;
+    const allItems = document.querySelectorAll('.nav-item, .footer-item');
+    let currentIndex = Array.from(allItems).indexOf(activeElement);
+
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        // Si la touche est flèche haut ou bas, on déplace le focus
+        if (event.key === "ArrowDown") {
+            currentIndex = (currentIndex + 1) % allItems.length; // Déplace vers le bas
+        } else if (event.key === "ArrowUp") {
+            currentIndex = (currentIndex - 1 + allItems.length) % allItems.length; // Déplace vers le haut
+        }
+
+        allItems[currentIndex].focus(); // Déplace le focus sur l'élément suivant
+    }
+}
+
 // Événements
 document.addEventListener("DOMContentLoaded", function() {
     // Charger la navbar
