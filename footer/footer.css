@@ -73,23 +73,3 @@ footer {
 .footer-links a:active {
     background-color: rgba(255, 255, 255, 0.2);
 }
-
-/* footer.css (ou style.css si tu préfères tout y mettre) */
-
-/* Styles pour le footer */
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #00bcd4;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #0097a7;
-}
-
